@@ -48,7 +48,7 @@ exports.getAll = async (req, res) => {
 exports.getById = async (req, res) => {
   // TODO B2
   const data = await Buku.findById(req.params.id).populate("kategoriId");  
-  if (!data) throw { status: 404, message: "Tidak ditemukan" };
+  if (!data) throw { status: 404, message: "Data Tidak ditemukan" };
   res.status(200).json(data);
 };
 
