@@ -39,11 +39,8 @@ const bukuSchema = new mongoose.Schema({
         type: String, 
         required: [true, 'isbn wajib diisi'], 
         unique: true, 
-        validate: { 
-            validator: function(v) { 
-                return /^{13}$/.test(v);
-            } 
-        }
+        min: 13,
+        max: 13,
     },
     penulis: { 
         type: [String], 
@@ -75,4 +72,4 @@ const bukuSchema = new mongoose.Schema({
 });
 
 // TODO A3: export model dengan nama "Buku"
-module.exports = mongoose.model('Buku', menuSchema);
+module.exports = mongoose.model('Buku', bukuSchema);

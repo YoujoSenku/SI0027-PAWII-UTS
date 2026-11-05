@@ -49,7 +49,7 @@ exports.getById = async (req, res) => {
   // TODO B2
   const data = await Buku.findById(req.params.id).populate("kategoriId");  
   if (!data) throw { status: 404, message: "Data Tidak ditemukan" };
-  res.json(data);
+  res.status(200).json(data);
 };
 
 // POST /buku
