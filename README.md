@@ -85,11 +85,11 @@ Semua respons error berbentuk `{ "message": "..." }`.
 
 Cari komentar `TODO` di source code. Bagian lain sudah tersedia lengkap.
 
-- [ ] **A. Model** - `models/bukuModel.js` (schema Buku, embedded & referencing, validasi)
-- [ ] **B. Controller Buku** - `controllers/bukuController.js` (`getAll`, `getById`, `create`, `update`, `remove`)
-- [ ] **C. Routing** - `routes/bukuRoutes.js` dan pendaftaran route pada `app.js`
-- [ ] **D. Error handling terpusat** - `middlewares/errorHandler.js` dan pendaftarannya pada `app.js`
-- [ ] **E. Pengujian otomatis** - seluruh request pada Postman collection **lulus** (lihat bagian di bawah)
+- [ Selesai ] **A. Model** - `models/bukuModel.js` (schema Buku, embedded & referencing, validasi)
+- [ Selesai ] **B. Controller Buku** - `controllers/bukuController.js` (`getAll`, `getById`, `create`, `update`, `remove`)
+- [ Selesai ] **C. Routing** - `routes/bukuRoutes.js` dan pendaftaran route pada `app.js`
+- [ Selesai ] **D. Error handling terpusat** - `middlewares/errorHandler.js` dan pendaftarannya pada `app.js`
+- [ Selesai ] **E. Pengujian otomatis** - seluruh request pada Postman collection **lulus** (lihat bagian di bawah)
 
 ## Menjalankan Project
 
