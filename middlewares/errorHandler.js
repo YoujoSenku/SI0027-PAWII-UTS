@@ -31,7 +31,7 @@ function errorHandler(err, req, res, next) {
     message = "Terjadi kesalahan pada server";
   }
 
-  res.status(status).json({ message});
+  res.status(status).json({message});
 }
 
 module.exports = errorHandler;
