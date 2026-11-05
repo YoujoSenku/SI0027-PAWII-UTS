@@ -48,7 +48,7 @@ exports.getAll = async (req, res) => {
 exports.getById = async (req, res) => {
   // TODO B2
   const data = await Buku.findById(req.params.id).populate("kategoriId");  
-  if (!data) throw { status: 404, message: "Data Tidak ditemukan" };
+  if (!data) throw { status: 404, message: "Buku Tidak ditemukan" };
   res.status(200).json(data);
 };
 
@@ -71,7 +71,7 @@ exports.update = async (req, res) => {
     new: true,
     runValidators: true,
   });
-  if (!data) throw { status: 404, message: "Data Tidak ditemukan" };
+  if (!data) throw { status: 404, message: "Buku Tidak ditemukan" };
   res.status(200).json(data);
 };
 
@@ -81,6 +81,6 @@ exports.update = async (req, res) => {
 exports.remove = async (req, res) => {
   // TODO B5
   const data = await Buku.findByIdAndDelete(req.params.id);
-  if (!data) throw { status: 404, message: "Data Tidak ditemukan" };
+  if (!data) throw { status: 404, message: "Buku Tidak ditemukan" };
   res.status(204).send();
 };
