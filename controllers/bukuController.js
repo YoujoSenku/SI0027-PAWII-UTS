@@ -38,7 +38,7 @@ exports.getAll = async (req, res) => {
       .limit(limit);
   const total = await Buku.countDocuments(filter);
 
-  res.json({ data, page, limit, total });
+  res.status(200).json({ data, page, limit, total });
 };
 
 // GET /buku/:id
